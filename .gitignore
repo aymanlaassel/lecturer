@@ -1,0 +1,4 @@
+courses/*/inbox/*
+!courses/*/inbox/.gitkeep
+courses/*/extracted/.manifest.json
+__pycache__/
