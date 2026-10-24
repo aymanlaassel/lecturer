@@ -1,7 +1,7 @@
 {
   "name": "lecturer",
   "displayName": "Lecturer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal AI tutor: drop your slides, PDFs and readings into a course folder, then /lecturer:teach, /lecturer:quiz and /lecturer:cheatsheet grounded in your own materials",
   "author": {
     "name": "Ayman Laassel",
