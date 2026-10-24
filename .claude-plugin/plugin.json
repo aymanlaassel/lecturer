@@ -1,0 +1,24 @@
+{
+  "name": "lecturer",
+  "displayName": "Lecturer",
+  "version": "1.0.0",
+  "description": "Personal AI tutor: drop your slides, PDFs and readings into a course folder, then /lecturer:teach, /lecturer:quiz and /lecturer:cheatsheet grounded in your own materials",
+  "author": {
+    "name": "Ayman Laassel",
+    "url": "https://github.com/aymanlaassel"
+  },
+  "homepage": "https://github.com/aymanlaassel/lecturer",
+  "repository": "https://github.com/aymanlaassel/lecturer",
+  "license": "MIT",
+  "keywords": [
+    "education",
+    "tutor",
+    "study",
+    "exam",
+    "flashcards",
+    "quiz",
+    "pdf",
+    "pptx"
+  ],
+  "icon": "./.claude-plugin/icon.png"
+}

@@ -1,6 +1,6 @@
 # Extracted materials index — logic-cs
 
-_Rebuilt 2026-10-24 13:00. Read the files below from `extracted/`._
+_Rebuilt 2026-10-24 13:01. Read the files below from `extracted/`._
 
 | Source file | Extracted markdown | Words | Preview |
 |---|---|---|---|

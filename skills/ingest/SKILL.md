@@ -3,14 +3,16 @@ name: ingest
 description: Extract course materials (pdf, pptx, docx, xlsx, txt, md) from courses/<course>/inbox into searchable markdown. Use when the student adds new files or says "ingest", "add these slides", "load the materials".
 ---
 
+Read `${CLAUDE_PLUGIN_ROOT}/rules/TUTOR.md` first and follow its course-resolution and ingest rules.
 Arguments: `$ARGUMENTS` = optional course name, then optional file paths.
-Default course: `logic-cs`.
+
 
 Steps:
+0. If the script fails with `ModuleNotFoundError`, install the requirements as described in TUTOR.md and rerun.
 1. If the student attached or named files that are not yet in `courses/<course>/inbox/`,
    pass their paths to the script; it copies them into inbox.
-   `python3 scripts/ingest.py courses/<course> <paths...>`
-   Otherwise just run `python3 scripts/ingest.py courses/<course>`.
+   `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ingest.py" courses/<course> <paths...>`
+   Otherwise just run `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ingest.py" courses/<course>`.
 2. Show the script's summary (extracted / skipped / failed).
 3. Open `courses/<course>/extracted/INDEX.md`. Skim each newly extracted file and decide
    which module(s) of `COURSE.md` it covers. Update the **Status of materials** column in

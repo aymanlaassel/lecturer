@@ -3,8 +3,9 @@ name: quiz
 description: Generate and grade a practice quiz in the exam's style (multiple choice + true/false, shuffled answers) from the course materials, and log results to track weak topics. Use for "quiz me", "test me on module 3", "give me 18 mock questions", "practice exam".
 ---
 
+Read `${CLAUDE_PLUGIN_ROOT}/rules/TUTOR.md` first and follow its course-resolution and ingest rules.
 Arguments: `$ARGUMENTS` = module number(s) or "all", optionally a question count.
-Defaults: all modules, 10 questions (use 18 for a "mock midterm"). Default course `logic-cs`.
+Defaults: all modules, 10 questions (use the real exam's count for a "mock exam"). 
 
 1. Read `COURSE.md`, `extracted/INDEX.md`, the relevant `extracted/*.md`, and the tail of
    `courses/<course>/quizzes/log.md` if it exists (weight weak topics more heavily).
@@ -21,4 +22,4 @@ Defaults: all modules, 10 questions (use 18 for a "mock midterm"). Default cours
    skipped) one a 2–4 line explanation with a citation to the slide / zyBooks section.
 5. Save the quiz + key to `courses/<course>/quizzes/<YYYY-MM-DD>-<scope>-<n>.md` and append
    a line to `quizzes/log.md`: `date | scope | score | topics missed`.
-6. Finish with the 1–3 topics to review next and offer `/teach <topic>` or `/explain`.
+6. Finish with the 1–3 topics to review next and offer `/lecturer:teach <topic>` or `/lecturer:explain`.

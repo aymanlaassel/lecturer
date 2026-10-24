@@ -4,9 +4,9 @@ Ingest course materials (PDF, PPTX, DOCX, XLSX, TXT, MD) into plain markdown
 so Claude can read and search them.
 
 Usage:
-    python3 scripts/ingest.py courses/<course>            # ingest everything in <course>/inbox
-    python3 scripts/ingest.py courses/<course> file.pdf   # ingest specific files
-    python3 scripts/ingest.py courses/<course> --force    # re-extract even if up to date
+    python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ingest.py" courses/<course>            # ingest everything in <course>/inbox
+    python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ingest.py" courses/<course> file.pdf   # ingest specific files
+    python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ingest.py" courses/<course> --force    # re-extract even if up to date
 
 Output: courses/<course>/extracted/<original-name>.md
 Also writes courses/<course>/extracted/INDEX.md listing every source with a size and

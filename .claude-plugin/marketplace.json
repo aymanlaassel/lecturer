@@ -1,0 +1,13 @@
+{
+  "name": "lecturer",
+  "description": "Lecturer: an AI tutor for Claude Code that teaches from your own course materials",
+  "owner": { "name": "Ayman Laassel", "url": "https://github.com/aymanlaassel" },
+  "plugins": [
+    {
+      "name": "lecturer",
+      "source": "./",
+      "description": "Teach, quiz and summarize any course from your slides, PDFs and readings",
+      "category": "education"
+    }
+  ]
+}

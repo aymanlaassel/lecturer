@@ -3,7 +3,8 @@ name: exam-info
 description: Summarize the upcoming exam — date, place, format, topics, what to bring, and which topics still have no materials. Use for "when is the exam", "what's on the midterm", "what do I need to bring".
 ---
 
-Read `courses/<course>/COURSE.md` (default course `logic-cs`) and
+Read `${CLAUDE_PLUGIN_ROOT}/rules/TUTOR.md` first and follow its course-resolution and ingest rules.
+Read `courses/<course>/COURSE.md`  and
 `courses/<course>/extracted/INDEX.md` if it exists.
 
 Answer with:
